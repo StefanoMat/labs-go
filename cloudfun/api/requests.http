@@ -1,0 +1,11 @@
+### GET request success
+GET http://localhost:8080/weather?cep=95650000
+Accept: application/json
+
+### GET request invalid cep
+GET http://localhost:8080/weather?cep=012345670
+Accept: application/json
+
+### GET request can not find zipcode
+GET http://localhost:8080/weather?cep=99999999
+Accept: application/json
